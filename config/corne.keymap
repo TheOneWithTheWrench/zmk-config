@@ -97,8 +97,8 @@
         bt_layer {
             label = "2";
             bindings = <
-&trans  &kp ESC  &none   &none   &none   &none     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none      &kp BACKSLASH  &kp MINUS         &trans
-&trans  &kp TAB  &trans  &trans  &trans  &trans    &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans     &kp COLON      &kp SINGLE_QUOTE  &trans
+&trans  &kp ESC  &none   &none   &none   &none     &kp LEFT_BRACE    &kp RIGHT_BRACE    &none      &kp BACKSLASH  &kp MINUS         &trans
+&trans  &kp TAB  &trans  &trans  &trans  &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &kp COLON      &kp SINGLE_QUOTE  &trans
 &trans  &to 0    &trans  &trans  &trans  &trans    &kp TILDE         &kp PLUS           &kp COMMA  &kp DOT        &kp SLASH         &trans
                          &trans  &trans  &trans    &trans            &trans             &to 3
             >;
