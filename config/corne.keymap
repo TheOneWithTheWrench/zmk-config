@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define DEFAULT_L 0
@@ -81,27 +80,27 @@
 &trans  &kp Q               &kp W           &kp E             &kp R               &kp T            &kp Y   &kp U                &kp I              &kp O            &kp P                   &trans
 &trans  &hm LEFT_COMMAND A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LEFT_CONTROL F  &kp G            &kp H   &hm RIGHT_CONTROL J  &hm RIGHT_SHIFT K  &hm RIGHT_ALT L  &hm RIGHT_COMMAND SEMI  &trans
 &trans  &kp Z               &kp X           &kp C             &kp V               &kp B            &kp N   &kp M                &kp COMMA          &kp DOT          &kp FSLH                &trans
-                                            &trans            &kp SPACE           &kp BACKSPACE    &trans  &kp ENTER            &to 1
+                                            &kp LEFT_SHIFT    &kp SPACE           &kp BACKSPACE    &trans  &kp ENTER            &to 1
             >;
         };
 
         number_layer {
             label = "1";
             bindings = <
-&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &none
-&none  &none   &none   &none   &none   &none     &none   &none   &none   &none   &none   &none
-&none  &none   &none   &none   &none   &none     &none   &none   &none   &none   &none   &none
-                       &to 0   &none   &trans    &trans  &none   &to 2
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &to 0   &trans  &trans    &trans  &trans  &to 2
             >;
         };
 
         bt_layer {
             label = "2";
             bindings = <
-&kp ESC       &kp LS(N1)    &kp LS(N2)      &kp LS(N3)    &kp LS(N4)    &kp LS(N5)     &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)  &none
-&none         &none         &kp LEFT_ARROW  &kp DEL       &kp RIGHT     &bt BT_CLR     &none       &none       &none       &none       &none       &none
-&bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2    &bt BT_SEL 1  &bt BT_SEL 0  &bootloader    &none       &none       &none       &none       &none       &none
-                                            &to 0         &none         &trans         &trans      &none       &to 3
+&trans  &kp ESC  &trans  &trans  &trans  &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans
+&trans  &trans   &trans  &trans  &trans  &trans    &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &trans  &trans  &trans
+&trans  &trans   &trans  &trans  &trans  &trans    &trans            &trans             &trans  &trans  &trans  &trans
+                         &to 0   &trans  &trans    &trans            &trans             &to 3
             >;
         };
 
